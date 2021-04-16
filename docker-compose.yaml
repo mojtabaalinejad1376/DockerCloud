@@ -6,6 +6,7 @@ services:
     ports: 
       - '8000:80'
     volumes: 
+      - ./src:/var/www/html
       - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
   php:
     build:
